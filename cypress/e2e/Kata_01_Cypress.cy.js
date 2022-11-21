@@ -63,7 +63,7 @@ describe("Kata01_Cypress", () => {
     cy.get("#suggestions").type("plus de point de synchro");
   });
 
-  it.skip("scénario_2", () => {
+  it("scénario_2", () => {
     cy.visit("Quizz.html");
     console.log("Scénario 2");
 
@@ -72,7 +72,7 @@ describe("Kata01_Cypress", () => {
     cy.get("#email").type(randomMail);
     cy.get('[type="text"]').type(randomAge);
     cy.get("select:nth-child(15)").select("Facile");
-    cy.get('[type="submit"]').click();
+    // cy.get('[type="submit"]').click();
     console.log("je dois être deeplink sur ma boite mail");
   });
 
@@ -83,7 +83,7 @@ describe("Kata01_Cypress", () => {
     cy.get("#firstName").type(randomFirstname);
     cy.get("#email").type(randomMail);
     cy.get("select:nth-child(15)").select("Facile");
-    cy.get('[type="submit"]').click();
+    //cy.get('[type="submit"]').click();
     console.log("une pop up d erreur doit apparaitre dans le champs Age");
   });
 });
